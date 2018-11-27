@@ -17,7 +17,8 @@ public class PartyCompany {
 	
 	public Connection getConnection() throws SQLException{
 		Connection connection;
-		String connectionString = "jdbc:postgresql://mod-intro-databases/lxw404";
+//		String connectionString = "jdbc:postgresql://mod-intro-databases/lxw404";	// from lab
+		String connectionString = "jdbc:postgresql://mod-intro-databases.cs.bham.ac.uk/lxw404";	// from laptop
 		connection = DriverManager.getConnection(connectionString, this.userName, this.password);
 		return connection;
 	}
